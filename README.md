@@ -98,6 +98,7 @@ Edit product titles directly inside the UI.
 
 ### ⌨️ Keyboard Accessibility
 Enter → Save changes
+
 Escape → Cancel editing
 
 ### 📱 Responsive Design
