@@ -1,139 +1,156 @@
-Product Catalog - React Infinite Scroll Application
-A responsive React application that displays products with infinite scrolling and inline editing capabilities.
+# 🛍️ Product Catalog – React Infinite Scroll Application
 
-🌐 Live Demo
-Deployed URL: https://product-catalog-vs-assessment.vercel.app
+A responsive React application that displays products with **infinite scrolling** and **inline editing** capabilities.
 
-🚀 Quick Start
-Clone the repository:
+## 🌐 Live Demo
+🔗 **Deployed URL:**  
+https://product-catalog-vs-assessment.vercel.app
 
-bash
+---
+
+## 🚀 Quick Start
+
+### Clone the repository
+```bash
 git clone https://github.com/PreritNag/vs-assessment.git
 cd vs-assessment
-Install dependencies:
-
-bash
+Install dependencies
 npm install
-Start development server:
-
-bash
+Start development server
 npm run dev
-Open your browser:
-Navigate to http://localhost:5173 (or the port shown in terminal)
+Open in browser
+Navigate to:
+http://localhost:5173 (or the port shown in the terminal)
 
 📁 Project Structure
-text
 vs-assessment/
 ├── src/
-│ ├── components/
-│ │ ├── ProductTable.jsx # Main table component
-│ │ ├── ProductRow.jsx # Individual product row with edit functionality
-│ │ └── LoadingIndicator.jsx # Loading and end state component
-│ ├── hooks/
-│ │ └── useInfiniteScroll.js # Custom hook for infinite scroll
-│ ├── services/
-│ │ └── productService.js # API service layer
-│ ├── styles/
-│ │ ├── App.css
-│ │ ├── ProductTable.css
-│ │ └── ProductRow.css
-│ ├── App.jsx # Main application component
-│ └── main.jsx # Application entry point
+│   ├── components/
+│   │   ├── ProductTable.jsx      # Main table component
+│   │   ├── ProductRow.jsx        # Individual product row with edit functionality
+│   │   └── LoadingIndicator.jsx  # Loading and end state component
+│   ├── hooks/
+│   │   └── useInfiniteScroll.js  # Custom hook for infinite scroll
+│   ├── services/
+│   │   └── productService.js     # API service layer
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── ProductTable.css
+│   │   └── ProductRow.css
+│   ├── App.jsx                   # Main application component
+│   └── main.jsx                  # Application entry point
 ├── public/
 ├── index.html
 ├── package.json
 ├── vite.config.js
 └── README.md
 🛠️ Technologies Used
-React 18 - Frontend library for building UI components
+React 18 – UI component library
 
-JavaScript (ES6+) - Primary programming language
+JavaScript (ES6+) – Core programming language
 
-CSS3 - Styling and responsive layout
+CSS3 – Styling and responsive design
 
-Intersection Observer API - For implementing infinite scroll
+Intersection Observer API – Infinite scrolling implementation
 
-Fetch API - For making HTTP requests to external API
+Fetch API – HTTP requests
 
-Vite - Fast build tool and development server
+Vite – Fast build tool and development server
 
 ⚙️ Configuration
-No environment variables required. The application uses a public API endpoint:
+No environment variables are required.
 
-Base URL: https://dummyjson.com/products
+Public API Used:
 
+https://dummyjson.com/products
 📱 Features
-Infinite Scrolling - Automatically loads more products as you scroll down
+♾️ Infinite Scrolling – Automatically loads more products on scroll
 
-Editable Product Titles - Click the edit button (✏️) to modify product names
+✏️ Editable Product Titles – Inline editing with save/cancel actions
 
-Responsive Design - Works seamlessly on mobile, tablet, and desktop screens
+📱 Responsive Design – Optimized for mobile, tablet, and desktop
 
-Real-time Updates - Changes reflect immediately in the UI without page refresh
+⚡ Real-time Updates – UI updates instantly without refresh
 
-Error Handling - Graceful error states with retry mechanisms
+🚨 Error Handling – Graceful error states with retry logic
 
-Loading States - Visual feedback during data fetching operations
+⏳ Loading States – Clear feedback during data fetching
 
-Keyboard Support - Use Enter to save and Escape to cancel while editing
+⌨️ Keyboard Support
+
+Enter → Save
+
+Escape → Cancel
 
 🧪 Testing the Application
-Test Infinite Scroll: Scroll down to the bottom of the table to trigger automatic loading of more products
+Infinite Scroll: Scroll to the bottom of the table
 
-Test Edit Functionality: Click the edit icon (✏️) next to any product name, modify the text, then save (✓) or cancel (✗)
+Edit Feature: Click ✏️ → Edit title → ✓ Save or ✗ Cancel
 
-Test Error Handling: Simulate network issues by throttling connection in browser DevTools
+Error Handling: Throttle network in browser DevTools
 
-Test Responsiveness: Resize browser window or use device toolbar in DevTools
+Responsiveness: Resize window or use device toolbar
 
 🔧 Build for Production
-bash
 npm run build
-The build artifacts will be stored in the dist/ directory, ready for deployment.
+The production-ready files will be generated in the dist/ directory.
 
 🚢 Deployment
-The application is deployed on Vercel. To deploy your own version:
-
-Using Vercel:
-bash
+Deploy on Vercel
 npm install -g vercel
 vercel
-Using Netlify:
-Connect your GitHub repository to Netlify
+Deploy on Netlify
+Connect GitHub repository
 
-Set build command: npm run build
+Build Command: npm run build
 
-Set publish directory: dist
+Publish Directory: dist
 
-Using GitHub Pages:
-Update vite.config.js with your base URL
+Deploy on GitHub Pages
+Update vite.config.js with base URL
 
-Run npm run build
+Run:
 
-Deploy the dist folder to GitHub Pages
+npm run build
+Deploy the dist/ folder
 
 🤝 Contributing
 Fork the repository
 
-Create a feature branch (git checkout -b feature/amazing-feature)
+Create a feature branch
 
-Commit your changes (git commit -m 'Add amazing feature')
+git checkout -b feature/amazing-feature
+Commit your changes
 
-Push to the branch (git push origin feature/amazing-feature)
+git commit -m "Add amazing feature"
+Push to branch
 
+git push origin feature/amazing-feature
 Open a Pull Request
 
 📄 License
 This project is open source and available under the MIT License.
 
 🙏 Acknowledgments
-Product data provided by DummyJSON
+Product data from DummyJSON
 
-Icons used for edit/save/cancel buttons
+Icons used for edit/save/cancel actions
 
-React documentation and community resources for best practices
+React documentation & community resources
 
 🔗 Links
-GitHub Repository: https://github.com/PreritNag/vs-assessment
+GitHub Repository:
+https://github.com/PreritNag/vs-assessment
 
-Live Application: https://product-catalog-vs-assessment.vercel.app
+Live Application:
+https://product-catalog-vs-assessment.vercel.app
+
+
+---
+
+If you want, I can also:
+- 🔥 Make it **ATS-friendly** for internship submissions  
+- 🎯 Rewrite it specifically for **React Intern / Frontend Intern assignments**  
+- ✨ Add badges (Vercel, React, MIT, etc.)
+
+Just say the word 😄
