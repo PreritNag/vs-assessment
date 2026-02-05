@@ -1,156 +1,135 @@
-# 🛍️ Product Catalog – React Infinite Scroll Application
+# 🛍️ Product Catalog – Frontend Assignment Submission
 
-A responsive React application that displays products with **infinite scrolling** and **inline editing** capabilities.
+A responsive **React-based Product Catalog** application built as part of a **Frontend Assignment**.  
+The application demonstrates infinite scrolling, inline editing, clean component architecture, and user-friendly UI interactions.
+
+This project focuses on **performance, readability, and real-world frontend best practices**.
+
+---
+
+## 📌 Assignment Overview
+
+**Objective:**  
+Build a product listing interface that efficiently loads data, supports inline editing, and provides a smooth user experience across devices.
+
+**Key Requirements Covered:**
+- Infinite scrolling using browser APIs
+- Editable UI elements with keyboard accessibility
+- Responsive layout
+- Proper loading and error handling
+- Clean and modular React code
+
+---
 
 ## 🌐 Live Demo
-🔗 **Deployed URL:**  
+
+🔗 **Deployed Application:**  
 https://product-catalog-vs-assessment.vercel.app
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-### Clone the repository
+### Clone the Repository
 ```bash
 git clone https://github.com/PreritNag/vs-assessment.git
 cd vs-assessment
-Install dependencies
+Install Dependencies
 npm install
-Start development server
+Start Development Server
 npm run dev
-Open in browser
-Navigate to:
+Open in Browser
+Visit:
 http://localhost:5173 (or the port shown in the terminal)
 
 📁 Project Structure
 vs-assessment/
 ├── src/
-│   ├── components/
-│   │   ├── ProductTable.jsx      # Main table component
-│   │   ├── ProductRow.jsx        # Individual product row with edit functionality
-│   │   └── LoadingIndicator.jsx  # Loading and end state component
+│   ├── Components/
+│   │   ├── ProductTable.jsx      # Main product table
+│   │   ├── ProductRow.jsx        # Row-level edit functionality
+│   │   ├── Loader.jsx            # Loading and end states
+│   │   └── *.css                 # Component-specific styles
 │   ├── hooks/
-│   │   └── useInfiniteScroll.js  # Custom hook for infinite scroll
-│   ├── services/
-│   │   └── productService.js     # API service layer
-│   ├── styles/
-│   │   ├── App.css
-│   │   ├── ProductTable.css
-│   │   └── ProductRow.css
-│   ├── App.jsx                   # Main application component
-│   └── main.jsx                  # Application entry point
+│   │   └── useInfiniteScroll.jsx # Custom infinite scroll hook
+│   ├── api/
+│   │   └── product.js            # API abstraction layer
+│   ├── App.jsx                   # Root component
+│   └── main.jsx                  # Entry point
 ├── public/
 ├── index.html
-├── package.json
 ├── vite.config.js
 └── README.md
-🛠️ Technologies Used
-React 18 – UI component library
+🛠️ Tech Stack
+React 18
 
-JavaScript (ES6+) – Core programming language
+JavaScript (ES6+)
 
-CSS3 – Styling and responsive design
+CSS3
 
-Intersection Observer API – Infinite scrolling implementation
+Intersection Observer API
 
-Fetch API – HTTP requests
+Fetch API
 
-Vite – Fast build tool and development server
+Vite
 
-⚙️ Configuration
+⚙️ API Configuration
 No environment variables are required.
 
-Public API Used:
+Data Source:
 
 https://dummyjson.com/products
-📱 Features
-♾️ Infinite Scrolling – Automatically loads more products on scroll
+✨ Features Implemented
+♾️ Infinite Scrolling
+Efficiently loads products as the user scrolls
 
-✏️ Editable Product Titles – Inline editing with save/cancel actions
+✏️ Inline Editing
+Edit product titles directly inside the UI
 
-📱 Responsive Design – Optimized for mobile, tablet, and desktop
+⌨️ Keyboard Accessibility
 
-⚡ Real-time Updates – UI updates instantly without refresh
+Enter → Save changes
 
-🚨 Error Handling – Graceful error states with retry logic
+Escape → Cancel editing
 
-⏳ Loading States – Clear feedback during data fetching
+📱 Responsive Design
+Optimized for mobile, tablet, and desktop screens
 
-⌨️ Keyboard Support
+⏳ Loading & Error States
+Clear feedback during API calls and failures
 
-Enter → Save
+⚡ Instant UI Updates
+No page refresh required after edits
 
-Escape → Cancel
+🧪 Testing Checklist
+Scroll to bottom → loads more products
 
-🧪 Testing the Application
-Infinite Scroll: Scroll to the bottom of the table
+Edit product title → save / cancel works correctly
 
-Edit Feature: Click ✏️ → Edit title → ✓ Save or ✗ Cancel
+Simulate slow network → loading indicators visible
 
-Error Handling: Throttle network in browser DevTools
+Resize screen → layout remains usable
 
-Responsiveness: Resize window or use device toolbar
-
-🔧 Build for Production
+🔧 Production Build
 npm run build
-The production-ready files will be generated in the dist/ directory.
+Build output is generated in the dist/ directory.
 
 🚢 Deployment
-Deploy on Vercel
-npm install -g vercel
-vercel
-Deploy on Netlify
-Connect GitHub repository
+Vercel – Live deployment used for submission
 
-Build Command: npm run build
-
-Publish Directory: dist
-
-Deploy on GitHub Pages
-Update vite.config.js with base URL
-
-Run:
-
-npm run build
-Deploy the dist/ folder
-
-🤝 Contributing
-Fork the repository
-
-Create a feature branch
-
-git checkout -b feature/amazing-feature
-Commit your changes
-
-git commit -m "Add amazing feature"
-Push to branch
-
-git push origin feature/amazing-feature
-Open a Pull Request
+Netlify / GitHub Pages – Supported with standard Vite setup
 
 📄 License
-This project is open source and available under the MIT License.
+MIT License – Open source and free to use.
 
 🙏 Acknowledgments
 Product data from DummyJSON
 
-Icons used for edit/save/cancel actions
+React documentation and frontend best practices
 
-React documentation & community resources
-
-🔗 Links
+🔗 Submission Links
 GitHub Repository:
 https://github.com/PreritNag/vs-assessment
 
-Live Application:
+Live Demo:
 https://product-catalog-vs-assessment.vercel.app
-
-
----
-
-If you want, I can also:
-- 🔥 Make it **ATS-friendly** for internship submissions  
-- 🎯 Rewrite it specifically for **React Intern / Frontend Intern assignments**  
-- ✨ Add badges (Vercel, React, MIT, etc.)
-
-Just say the word 😄
